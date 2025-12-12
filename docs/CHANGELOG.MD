@@ -7,6 +7,107 @@
 - [🎨 Giao diện người dùng](UI.MD)
 - [📝 Nhật ký thay đổi](CHANGELOG.MD)
 
+## [2025-12-12 16:35] ✨
+### Thêm Mới
+- ✨ Thêm hiệu ứng động "pulse" cho nút "Bắt đầu" để tạo sự thu hút
+- 💫 Tạo animation pulse 2s lặp vô hạn
+- 🎨 Hiệu ứng tạo vòng tròn ánh sáng xung quanh nút
+- 📝 Tắt hiệu ứng khi hover để tạo trải nghiệm mượt mà
+- 📝 Cập nhật tài liệu mô tả
+
+### Chi Tiết
+- 🎯 Tạo animation: pulse 2s infinite
+- 🌟 @keyframes pulse: tạo hiệu ứng vòng tròn ánh sáng mở rộng rồi mờ dần
+- 🚫 Tắt animation khi hover (animation: none) để tránh xung đột với hiệu ứng hover
+- 💡 Tăng sự chú ý đến hành động chính mà không làm rối giao diện
+
+[🔙 Về đầu trang](#-nhật-ký-thay-đổi)
+
+## [2025-12-12 16:30] ⚙️
+### Tinh Chỉnh
+- ⚙️ Giảm độ dày viền của nút "Bắt đầu"
+- 🎨 Thay đổi border-width từ 2px xuống 1px
+- 📝 Cập nhật tài liệu mô tả
+
+### Chi Tiết
+- 🎯 Border: giảm từ 2px xuống 1px solid var(--text-white)
+- 💡 Tạo sự cân đối cho nút đã được thu nhỏ
+- ✨ Giữ nguyên các thuộc tính khác để đảm bảo tính nhất quán
+
+[🔙 Về đầu trang](#-nhật-ký-thay-đổi)
+
+## [2025-12-12 16:25] 📏
+### Tinh Chỉnh
+- 📏 Giảm kích thước nút "Bắt đầu" để phù hợp hơn với navbar
+- 🔧 Điều chỉnh padding từ `0.4rem 1rem` xuống `0.25rem 0.75rem`
+- 🎨 Giảm border-radius từ 25px xuống 20px
+- 📝 Cập nhật tài liệu mô tả
+
+### Chi Tiết
+- 🎯 Padding: giảm từ 0.4rem 1rem xuống 0.25rem 0.75rem
+- 📐 Border-radius: giảm từ 25px xuống 20px
+- 💡 Tạo sự cân đối hơn với các thành phần khác trong navbar
+
+[🔙 Về đầu trang](#-nhật-ký-thay-đổi)
+
+## [2025-12-12 16:20] 🔤
+### Tinh Chỉnh
+- 🔤 Tăng độ đậm của chữ trong nút "Bắt đầu" để rõ ràng hơn
+- 🎨 Thay đổi font-weight từ 500 lên 600 để tăng độ đậm
+- 📝 Cập nhật tài liệu mô tả
+
+### Chi Tiết
+- 🎯 Font-weight: tăng từ 500 (medium) lên 600 (semi-bold)
+- 🔍 Cải thiện khả năng đọc trên nền navbar chuyển động
+- 💡 Tăng tính trực quan và dễ đọc cho hành động chính
+
+[🔙 Về đầu trang](#-nhật-ký-thay-đổi)
+
+## [2025-12-12 16:15] 💫
+### Tinh Chỉnh
+- 💫 Điều chỉnh hiệu ứng hover cho nút "Bắt đầu" để tạo cảm giác mềm mại hơn
+- 🎨 Giảm độ sáng của hiệu ứng: từ nền trắng hoàn toàn sang nền trắng mờ (rgba(255,255,255,0.2))
+- 🌟 Giảm độ sáng của hiệu ứng glow: từ (255,255,255,0.6) xuống (255,255,255,0.4)
+- 📝 Cập nhật tài liệu mô tả
+
+### Chi Tiết
+- 🎯 Background hover: rgba(255, 255, 255, 0.2) - màu trắng trong suốt nhẹ
+- 🎨 Text color: giữ nguyên màu trắng (--text-white)
+- 💫 Glow effect: rgba(255, 255, 255, 0.4) - độ sáng giảm để tạo hiệu ứng nhẹ nhàng
+- 📌 Kích thước: vẫn giữ hiệu ứng scale(1.05) cho cảm giác tương tác
+
+[🔙 Về đầu trang](#-nhật-ký-thay-đổi)
+
+## [2025-12-12 16:10] ✨
+### Thay Đổi
+- ✨ Tăng sự tương phản cho nút "Bắt đầu" với nền navbar
+- 🎨 Thay đổi thiết kế nút: nền trong suốt với viền trắng
+- 🌟 Thay đổi hiệu ứng hover: nút chuyển sang nền trắng với chữ màu nâu đất
+- 💫 Cập nhật hiệu ứng glow với màu trắng để phù hợp
+- 📝 Cập nhật tài liệu mô tả
+
+### Chi Tiết
+- 🎯 Nền nút: trong suốt (transparent) để tạo độ tương phản cao
+- 🖌️ Viền nút: 2px solid var(--text-white) - trắng để nổi bật trên nền
+- 🎨 Hover: nút chuyển sang nền trắng, chữ màu nâu đất (--primary-700)
+- 💫 Glow effect: sử dụng màu trắng (rgba(255, 255, 255, 0.6)) để tạo hiệu ứng phát sáng sạch
+
+[🔙 Về đầu trang](#-nhật-ký-thay-đổi)
+
+## [2025-12-12 16:05] 🎨
+### Thay Đổi
+- 🎨 Điều chỉnh màu nút "Bắt đầu" để hài hòa với hệ thống màu đất/thổ của navbar
+- 🌍 Chuyển từ màu xanh lá đất sang màu terracotta (secondary-500)
+- 🌟 Cập nhật hiệu ứng glow để phù hợp với màu mới
+- 📝 Cập nhật tài liệu mô tả
+
+### Chi Tiết
+- 🎯 Màu nút mới: var(--secondary-500) (#d87a68) - màu terracotta từ hệ thống màu đất/thổ
+- 🎨 Màu hover: var(--secondary-600) (#c05e48) - tông màu đất sâu hơn
+- 💫 Màu glow effect: rgba(216, 122, 104, 0.6) - phù hợp với màu terracotta
+
+[🔙 Về đầu trang](#-nhật-ký-thay-đổi)
+
 ## [2025-12-12 16:00] ✨
 ### Thay Đổi
 - ✨ Thay đổi hiệu ứng hover cho nút "Bắt đầu": từ hiệu ứng nâng nhẹ sang hiệu ứng phát sáng (glow effect)

@@ -23,21 +23,36 @@
 }
 
 .navbar-start-btn {
-  background: var(--complement-500);
+  background: transparent;
   color: var(--text-white);
-  border: none;
-  padding: 0.4rem 1rem;
-  border-radius: 25px;
+  border: 1px solid var(--text-white);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 600;
   transition: all 0.3s ease;
   box-shadow: 0 2px 4px var(--shadow-light);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
 }
 
 .navbar-start-btn:hover {
-  background: var(--complement-600);
-  box-shadow: 0 0 15px 5px rgba(89, 171, 98, 0.6);
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--text-white);
+  box-shadow: 0 0 12px 3px rgba(255, 255, 255, 0.4);
   transform: scale(1.05);
+  animation: none;
 }
 
 .navbar-brand h2 {
