@@ -1,101 +1,105 @@
-# 🎨 Giao Diện Người Dùng
+# 🎨 Tài liệu Giao diện WebLocal
 
-## 🔄 Chuyển Tiếp Giữa Các Tài Liệu
-- [🏠 Trang chủ](README.MD)
-- [📋 Cấu trúc hệ thống](STRUCTURE.MD)
-- [🚀 Hướng dẫn vận hành](RUN.MD)
-- [🎨 Giao diện người dùng](UI.MD)
-- [📝 Nhật ký thay đổi](CHANGELOG.MD)
+## 🎯 Thiết kế tổng thể
 
-## 📚 Mục Lục
-- [🎯 Mục Tiêu Giao Diện](#-mục-tiêu-giao-diện)
-- [🧭 Flow Người Dùng](#-flow-người-dùng)
-- [🎨 Thiết Kế Giao Diện](#-thiết-kế-giao-diện)
-- [📱 Components Hiện Có](#-components-hiện-có)
-- [🔧 Công Nghệ Sử Dụng](#-công-nghệ-sử-dụng)
+Giao diện WebLocal được thiết kế theo phong cách hiện đại, tối giản với hệ thống màu sắc đồng bộ hóa. Giao diện sử dụng hệ thống CSS variables để duy trì sự nhất quán về màu sắc trên toàn ứng dụng.
 
-## 🎯 Mục Tiêu Giao Diện
-- Hiển thị trạng thái hệ thống thời gian thực
-- Cung cấp công cụ quản lý nhanh
-- Giao diện thân thiện, responsive trên mọi thiết bị
-- Điều hướng dễ dàng giữa các trang
+## 🌈 Theme màu sắc (Thổ Thần)
 
-[🔙 Về mục lục](#-mục-lục)
+### Màu chính (Primary Colors - Nâu Đất)
+- `--primary-500`: #a5966d (Nâu trung bình từ đất)
+- `--primary-600`: #8d7b54 (Nâu đậm)
 
-## 🧭 Flow Người Dùng
-1. **Navbar** → Hiển thị logo thương hiệu
-2. **Trang chủ** → Xem trạng thái tổng quát
-3. **Bảng điều khiển** → Quản lý chi tiết (tính năng đang phát triển)
-4. **Trạng thái** → Xem chi tiết trạng thái (tính năng đang phát triển)
-5. **Cài đặt** → Cấu hình hệ thống (tính năng đang phát triển)
+### Màu phụ (Secondary Colors - Terracotta)
+- `--secondary-500`: #d87a68 (Terracotta - đỏ nâu đặc trưng)
+- `--secondary-600`: #c05e48 (Terracotta đậm)
 
-[🔙 Về mục lục](#-mục-lục)
+### Màu bổ sung (Complementary Colors - Rừng & Đất sét)
+- `--complement-500`: #59ab62 (Xanh lá đất)
+- `--complement-600`: #438a4a (Xanh rừng)
 
-## 🎨 Thiết Kế Giao Diện
-- **Màu sắc**: Hệ thống màu đất/thổ (earth/soil theme) theo biến CSS với hiệu ứng chuyển động nhẹ nhàng
-- **Layout**: Responsive với navbar trên cùng, chiều cao gọn nhẹ
-- **Components**: Reusable React components
-- **Icons**: Emoji + biểu tượng trực quan
+### Màu nền (Background)
+- `--bg-primary`: #fcfaf7 (Nền đất nhẹ)
+- `--bg-card`: #ffffff (Nền card - trắng sạch)
 
-[🔙 Về mục lục](#-mục-lục)
+### Màu văn bản
+- `--text-primary`: #4d3d2e (Nâu đậm gần giống đen)
+- `--text-white`: #ffffff (Văn bản trắng)
 
-## 📱 Components Hiện Có
+## 🖼️ Giao diện Login
 
-### Cấu Trúc Component (Dạng Cây)
-```
-📁 Components/
-├── 📄 Navbar.jsx
-│   ├── 🎨 Giao diện: Thanh ngang trên cùng, chiều cao gọn nhẹ
-│   ├── 🎯 Chức năng: Hiển thị logo thương hiệu và nút hành động chính
-│   ├── 🎨 Thiết kế: Gradient đất/thổ chuyển động nhẹ nhàng (theo biến CSS)
-│   ├── 📐 Kích thước: padding: 0.3rem 1.25rem, font-size: 1rem (tiêu đề)
-│   ├── 🏷️ Logo: Sử dụng component Logo.jsx (thiết kế thương hiệu cá tính)
-│   └── 🎯 Nút hành động: Nút "Bắt đầu" ở bên phải với hiệu ứng pulse và hover
-├── 📄 Logo.jsx
-│   ├── 🖼️ Loại file: Hình ảnh PNG
-│   ├── 📁 Đường dẫn: ../utils/img/logo.png
-│   ├── 🎯 Mục tiêu: Hiển thị biểu tượng thương hiệu WebLocal
-│   ├── 📐 Kích thước: 50px chiều cao, tự động điều chỉnh theo tỷ lệ
-│   ├── 🌐 Màu sắc: Áp dụng filter CSS để đổi màu thành trắng
-│   └── 🖌️ Hiệu ứng: Zoom nhẹ khi hover (1.05x)
-├── 📄 Navbar.css
-│   ├── 🎨 Định dạng: flex layout, gradient background chuyển động
-│   ├── 📌 Nút hành động: navbar-start-btn với styling riêng
-│   ├── ✨ Hiệu ứng: animation pulse 2s lặp vô hạn để thu hút sự chú ý
-│   ├── 🌐 Tương tác: hover effects với hiệu ứng phát sáng (glow effect)
-│   └── 📱 Mobile: responsive với giao diện gọn gàng
-└── 📄 Logo.css
-    ├── 🎨 Định dạng: responsive sizing
-    ├── 🎯 Hiển thị: ảnh logo với hiệu ứng hover
-    └── 🌐 Tương tác: scale transformation
-```
+Trang đăng nhập (Login Page) được thiết kế với form trung tâm, có:
+- Logo lớn ở giữa container thay thế cho tiêu đề "Chào mừng bạn đến với WebLocal"
+- Form đăng nhập với username/email và password
+- Các tùy chọn quên mật khẩu và tạo tài khoản mới
+- Hiệu ứng focus cho input fields
+- Hover effects cho button
+- Hiệu ứng pulse 2s lặp vô hạn cho logo (chỉ xuất hiện trong ranh giới hình ảnh) để tăng sự thu hút
 
-### Component Tree (Theo trang hiện tại)
-```
-📄 App.jsx
-└── 📄 HomePage.jsx
-    └── 📄 Navbar.jsx
-        └── 📄 Logo.jsx
-            └── 🎨 UI: Biểu tượng thương hiệu WebLocal với hiệu ứng động
-```
+## 🏷️ Logo Component
 
-[🔙 Về mục lục](#-mục-lục)
+Component Logo được thiết kế linh hoạt với các biến thể:
+- `default`: Logo cơ bản (không hiệu ứng đặc biệt)
+- `navbar`: Logo với filter trắng để hiển thị trên nền gradient (dùng trong Navbar)
+- `login`: Logo với hiệu ứng gradient chuyển động tương tự Navbar
 
-## 🔗 Mối Quan Hệ Component
-```
-📁 Pages/
-└── HomePage.jsx
-    └── sử dụng
-        └── 📁 Components/
-            └── Navbar.jsx
-                └── hiển thị
-                    └── Logo (/)
-```
+### Hiệu ứng
+- Animation gradientShift 8s lặp vô hạn cho biến thể login
+- Hiệu ứng hover phát sáng (glow effect) cho biến thể login
+- Hiệu ứng hover scale(1.05) cho biến thể navbar và default
+- Sử dụng hệ thống màu CSS variables để đồng bộ giao diện
 
-## 🔧 Công Nghệ Sử Dụng
-- React 18+
-- CSS Modules/Styled Components (tùy chọn)
-- Responsive Design
-- API integration qua proxy
+## 📱 Responsive
 
-[🔙 Về đầu trang](#-giao-diện-người-dùng)
+Tất cả giao diện đều hỗ trợ responsive trên nhiều kích thước màn hình khác nhau, từ mobile đến desktop.
+
+## ⚙️ Cấu trúc
+
+Tất cả biến màu được định nghĩa trong `frontend/src/styles/variables.css` và được import vào `App.jsx` để áp dụng toàn cục.
+
+## 📐 Hệ thống kích thước
+
+Dự án sử dụng hệ thống kích thước chuẩn dựa trên tỉ lệ 8px (space unit) để đảm bảo tính đồng bộ trong giao diện:
+
+- Khoảng cách: `--space-0`, `--space-025`, `--space-05`, `--space-1`... `--space-10`
+- Kích thước font: `--font-size-xs`, `--font-size-sm`, `--font-size-base`, `--font-size-md`...
+- Kích thước thành phần: `--input-height`, `--btn-height`, `--logo-size-sm`, `--logo-size-md`, `--logo-size-lg`
+- Border-radius: `--border-radius-sm`, `--border-radius-md`, `--border-radius-lg`
+
+Hệ thống này giúp đồng bộ giao diện và dễ dàng điều chỉnh kích thước các thành phần.
+
+## 🎨 Hệ thống màu sắc chuẩn
+
+Tất cả các thành phần UI đều sử dụng hệ thống màu sắc được định nghĩa trong `variables.css`:
+
+- Màu chính: `--primary-500`, `--primary-600`, v.v. (nâu đất)
+- Màu phụ: `--secondary-500`, `--secondary-600`, v.v. (terracotta)
+- Màu nền: `--bg-primary`, `--bg-secondary`, `--bg-card`
+- Màu văn bản: `--text-primary`, `--text-secondary`, `--text-white`
+- Màu trạng thái: `--success`, `--warning`, `--error`, `--info`
+
+## 🏗️ Hệ thống thành phần chuẩn
+
+Dự án sử dụng hệ thống CSS toàn cục trong `App.css` cho các thành phần UI chuẩn:
+
+- Input: với kích thước và màu sắc đồng nhất sử dụng biến CSS
+- Button: với các biến thể sử dụng biến CSS
+- Card: với hiệu ứng bóng đồng nhất sử dụng biến CSS
+- Utility classes: `.container`, `.d-flex`, `.flex-column`, `.justify-center`, `.align-center`, `.text-center`, `.mt-*`, `.mb-*`, `.pt-*`, `.pb-*`, v.v. cho bố cục nhanh
+
+## 📐 Hệ thống đồng bộ
+
+Tất cả các thành phần UI trong dự án đều sử dụng hệ thống màu sắc và kích thước chuẩn:
+
+- Biến màu: `var(--primary-500)`, `var(--secondary-500)`, `var(--bg-primary)`, v.v.
+- Biến kích thước: `var(--space-1)`, `var(--space-2)`, `var(--font-size-sm)`, `var(--font-size-base)`, v.v.
+- Biến hiệu ứng: `var(--border-radius-sm)`, `var(--border-radius-md)`, v.v.
+
+## 🎨 Hiệu ứng chuyển động
+
+Hiệu ứng chuyển động được đồng bộ trên toàn ứng dụng sử dụng:
+
+- animation: gradientShift 8s ease infinite cho hiệu ứng gradient
+- animation: pulse 2s infinite cho hiệu ứng phát sáng
+- transition: all 0.3s ease cho hiệu ứng hover
+- transform: scale(1.05) cho hiệu ứng hover

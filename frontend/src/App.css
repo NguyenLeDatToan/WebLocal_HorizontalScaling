@@ -1,72 +1,4 @@
-:root {
-  /* Màu chính (Primary Earth Colors) */
-  --primary-100: #f5f1e8;  /* Nâu nhạt */
-  --primary-200: #eadccc;
-  --primary-300: #d3c2a8;
-  --primary-400: #bbaf88;
-  --primary-500: #a5966d;  /* Nâu trung bình từ đất */
-  --primary-600: #8d7b54;
-  --primary-700: #75613b;
-  --primary-800: #5d4722;
-  --primary-900: #452d09;  /* Nâu đậm */
-
-  /* Màu phụ (Secondary Earth Colors - Terracotta & Stone) */
-  --secondary-100: #fcf2ef;
-  --secondary-200: #f7e0d9;
-  --secondary-300: #f0c2b8;
-  --secondary-400: #eaa497;
-  --secondary-500: #d87a68;  /* Màu terracotta đặc trưng */
-  --secondary-600: #c05e48;
-  --secondary-700: #a8422a;
-  --secondary-800: #90260c;
-  --secondary-900: #780a00;
-
-  /* Màu bổ sung (Complementary Earth Colors - Forest & Clay) */
-  --complement-100: #e9f4ea;
-  --complement-200: #d0e8d3;
-  --complement-300: #a8d4ad;
-  --complement-400: #80c087;
-  --complement-500: #59ab62; /* Xanh lá đất */
-  --complement-600: #438a4a;
-  --complement-700: #2d6a32;
-  --complement-800: #174a1a;
-  --complement-900: #012a02;
-
-  /* Màu nền (Background Colors) */
-  --bg-primary: #fcfaf7;         /* Nền đất nhẹ */
-  --bg-secondary: #f5f1e8;       /* Nền đất nhẹ hơn */
-  --bg-card: #ffffff;            /* Nền card trắng sạch */
-  --bg-modal: rgba(85, 68, 51, 0.6); /* Nền mờ đất cho modal */
-
-  /* Màu văn bản (Text Colors) */
-  --text-primary: #4d3d2e;      /* Nâu đậm gần giống đen */
-  --text-secondary: #7a6651;    /* Nâu trung bình */
-  --text-light: #a79582;        /* Nâu nhạt */
-  --text-white: #ffffff;        /* Văn bản trắng */
-  --text-dark: #332a1f;         /* Đen đất */
-
-  /* Màu viền (Border Colors) */
-  --border-light: #d9d0c3;      /* Viền đất sáng */
-  --border-medium: #bfb4a7;     /* Viền đất trung bình */
-  --border-dark: #9e8e7a;       /* Viền đất tối */
-
-  /* Màu trạng thái (Status Colors) */
-  --success: #59ab62;           /* Xanh đất (thành công) */
-  --warning: #d8a100;           /* Vàng đất (cảnh báo) */
-  --error: #c05e48;            /* Đỏ đất (lỗi) */
-  --info: #5e8eb7;             /* Xanh dương đất (thông tin) */
-
-  /* Màu bóng (Shadow Colors) */
-  --shadow-light: rgba(77, 61, 46, 0.1);
-  --shadow-medium: rgba(77, 61, 46, 0.2);
-  --shadow-heavy: rgba(77, 61, 46, 0.3);
-
-  /* Gradient */
-  --gradient-primary: linear-gradient(135deg, var(--primary-500) 0%, var(--secondary-500) 100%);
-  --gradient-secondary: linear-gradient(135deg, var(--secondary-500) 0%, var(--primary-500) 100%);
-  --gradient-tertiary: linear-gradient(135deg, var(--primary-400) 0%, var(--complement-400) 100%);
-}
-
+/* Base styles */
 * {
   margin: 0;
   padding: 0;
@@ -80,4 +12,128 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  color: var(--text-primary);
+  background: var(--bg-primary);
 }
+
+/* Typography */
+h1 { font-size: var(--font-size-3xl); }
+h2 { font-size: var(--font-size-2xl); }
+h3 { font-size: var(--font-size-xl); }
+h4 { font-size: var(--font-size-lg); }
+h5 { font-size: var(--font-size-md); }
+h6 { font-size: var(--font-size-base); }
+
+p {
+  font-size: var(--font-size-base);
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--primary-500);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Layout utilities */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-2);
+}
+
+.d-flex { display: flex; }
+.flex-column { flex-direction: column; }
+.justify-center { justify-content: center; }
+.align-center { align-items: center; }
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.w-full { width: 100%; }
+.h-full { height: 100%; }
+
+/* Spacing utilities */
+.mt-0 { margin-top: var(--space-0); }
+.mt-025 { margin-top: var(--space-025); }
+.mt-05 { margin-top: var(--space-05); }
+.mt-1 { margin-top: var(--space-1); }
+.mt-15 { margin-top: var(--space-15); }
+.mt-2 { margin-top: var(--space-2); }
+.mt-25 { margin-top: var(--space-25); }
+.mt-3 { margin-top: var(--space-3); }
+.mt-4 { margin-top: var(--space-4); }
+
+.mb-0 { margin-bottom: var(--space-0); }
+.mb-025 { margin-bottom: var(--space-025); }
+.mb-05 { margin-bottom: var(--space-05); }
+.mb-1 { margin-bottom: var(--space-1); }
+.mb-15 { margin-bottom: var(--space-15); }
+.mb-2 { margin-bottom: var(--space-2); }
+.mb-25 { margin-bottom: var(--space-25); }
+.mb-3 { margin-bottom: var(--space-3); }
+.mb-4 { margin-bottom: var(--space-4); }
+
+.ml-0 { margin-left: var(--space-0); }
+.ml-025 { margin-left: var(--space-025); }
+.ml-05 { margin-left: var(--space-05); }
+.ml-1 { margin-left: var(--space-1); }
+.ml-15 { margin-left: var(--space-15); }
+.ml-2 { margin-left: var(--space-2); }
+.ml-25 { margin-left: var(--space-25); }
+.ml-3 { margin-left: var(--space-3); }
+.ml-4 { margin-left: var(--space-4); }
+
+.mr-0 { margin-right: var(--space-0); }
+.mr-025 { margin-right: var(--space-025); }
+.mr-05 { margin-right: var(--space-05); }
+.mr-1 { margin-right: var(--space-1); }
+.mr-15 { margin-right: var(--space-15); }
+.mr-2 { margin-right: var(--space-2); }
+.mr-25 { margin-right: var(--space-25); }
+.mr-3 { margin-right: var(--space-3); }
+.mr-4 { margin-right: var(--space-4); }
+
+.pt-0 { padding-top: var(--space-0); }
+.pt-025 { padding-top: var(--space-025); }
+.pt-05 { padding-top: var(--space-05); }
+.pt-1 { padding-top: var(--space-1); }
+.pt-15 { padding-top: var(--space-15); }
+.pt-2 { padding-top: var(--space-2); }
+.pt-25 { padding-top: var(--space-25); }
+.pt-3 { padding-top: var(--space-3); }
+.pt-4 { padding-top: var(--space-4); }
+
+.pb-0 { padding-bottom: var(--space-0); }
+.pb-025 { padding-bottom: var(--space-025); }
+.pb-05 { padding-bottom: var(--space-05); }
+.pb-1 { padding-bottom: var(--space-1); }
+.pb-15 { padding-bottom: var(--space-15); }
+.pb-2 { padding-bottom: var(--space-2); }
+.pb-25 { padding-bottom: var(--space-25); }
+.pb-3 { padding-bottom: var(--space-3); }
+.pb-4 { padding-bottom: var(--space-4); }
+
+.pl-0 { padding-left: var(--space-0); }
+.pl-025 { padding-left: var(--space-025); }
+.pl-05 { padding-left: var(--space-05); }
+.pl-1 { padding-left: var(--space-1); }
+.pl-15 { padding-left: var(--space-15); }
+.pl-2 { padding-left: var(--space-2); }
+.pl-25 { padding-left: var(--space-25); }
+.pl-3 { padding-left: var(--space-3); }
+.pl-4 { padding-left: var(--space-4); }
+
+.pr-0 { padding-right: var(--space-0); }
+.pr-025 { padding-right: var(--space-025); }
+.pr-05 { padding-right: var(--space-05); }
+.pr-1 { padding-right: var(--space-1); }
+.pr-15 { padding-right: var(--space-15); }
+.pr-2 { padding-right: var(--space-2); }
+.pr-25 { padding-right: var(--space-25); }
+.pr-3 { padding-right: var(--space-3); }
+.pr-4 { padding-right: var(--space-4); }

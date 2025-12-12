@@ -2,6 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
+import './styles/variables.css';
+import './styles/size-scale.css';
+import './styles/global.css';
 import './App.css';
 
 function App() {

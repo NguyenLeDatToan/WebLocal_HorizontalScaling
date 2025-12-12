@@ -1,55 +1,35 @@
-# 📋 Hệ Thống Máy Chủ Website
+# 📚 Tài liệu dự án WebLocal
 
-## 🌟 Tổng Quan
-Hệ thống 5 lớp với khả năng mở rộng theo chiều ngang, quản lý tải thông minh và giám sát trạng thái thời gian thực.
+## 🎯 Tổng quan
 
-## 🎯 Mục Tiêu
-- Mở rộng theo chiều ngang (horizontal scaling) 📈
-- Chạy được trên 1 máy hoặc nhiều máy 🖥️
-- Không sử dụng Docker 🚫
-- Tự động phát hiện và quản lý dịch vụ hoạt động ✅
+Dự án WebLocal là một ứng dụng web hiện đại được xây dựng với React, sử dụng hệ thống màu sắc đồng bộ và giao diện thân thiện với người dùng.
 
-## 💻 Công Nghệ Sử Dụng
-- Frontend: React, Vite, JSX
-- Backend: NodeJS
-- Package Manager: NPM
-- CSS Framework: CSS thuần
+## 🏗️ Kiến trúc
 
-## 🧭 Điều Hướng
-- **Cấu trúc hệ thống**: [STRUCTURE.MD](STRUCTURE.MD) 🗂️
-- **Hướng dẫn vận hành**: [RUN.MD](RUN.MD) 🚀
-- **Giao diện người dùng**: [UI.MD](UI.MD) 🎨
-- **Nhật ký thay đổi**: [CHANGELOG.MD](CHANGELOG.MD) 📝
+- Frontend: React với hệ thống CSS variables cho theme
+- Backend: Node.js, Gateway và DB Services
+- Load Balancer: Phân phối tải
+- Web Servers: Các máy chủ xử lý yêu cầu
 
-## 📚 Mục Lục
-- [🎯 Mục Tiêu](#-mục-tiêu)
-- [💻 Công Nghệ Sử Dụng](#-công-nghệ-sử-dụng)
-- [🧭 Điều Hướng](#-điều-hướng)
-- [📱 Cấu Trúc Component](#-cấu-trúc-component)
+## 🎨 Giao diện
 
-## 📱 Cấu Trúc Component
-Các component được tổ chức theo mô hình thư mục rõ ràng:
-- 📁 `frontend/src/components/`: Chứa các component tái sử dụng
-- 📁 `frontend/src/pages/`: Chứa các trang chính của ứng dụng
-- 📁 `frontend/src/services/`: Chứa các service kết nối API
-- 📁 `frontend/src/utils/`: Chứa các tiện ích hỗ trợ
-- 📁 `frontend/src/utils/img/`: Chứa hình ảnh logo.png
+- Sử dụng theme màu xanh dương/tím (blue/purple) làm chủ đạo
+- Hệ thống biến CSS được định nghĩa trong `frontend/src/styles/variables.css`
+- Tất cả thành phần UI đều tuân thủ theme chung
 
-Hiện tại, hệ thống đã tích hợp:
-- **Logo.jsx**: Component hiển thị logo.png
-- **Navbar.jsx**: Component điều hướng chính (sử dụng Logo.jsx)
-- **HomePage.jsx**: Trang chủ hiển thị với Navbar
+## 🔧 Cài đặt
 
-## 💾 Phiên Bản & Sao Lưu
-- `V0.0.1-KhoiDauCuaDuAn`: Hệ thống cơ bản
-- `V0.0.2-DB-Gateway`: Có DB Gateway trung gian
-- `V0.1.2-Docs-System`: Hệ thống hoàn chỉnh với tài liệu cải thiện
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-## 🔄 Chuyển Tiếp Giữa Các Tài Liệu
-- [🏠 Trang chủ](README.MD)
-- [📋 Cấu trúc hệ thống](STRUCTURE.MD)
-- [🚀 Hướng dẫn vận hành](RUN.MD)
-- [🎨 Giao diện người dùng](UI.MD)
-- [📝 Nhật ký thay đổi](CHANGELOG.MD)
+## 🚀 Chạy ứng dụng
 
-[🔙 Về đầu trang](#-hệ-thống-máy-chủ-website)
+- Chạy toàn bộ hệ thống: `./start-system.sh`
+- Dừng hệ thống: `./stop-system.sh`
+
+## 📝 Ghi chú
+
+Thư mục này chứa tất cả tài liệu liên quan đến dự án, bao gồm hướng dẫn sử dụng, thiết kế UI và lịch sử thay đổi.

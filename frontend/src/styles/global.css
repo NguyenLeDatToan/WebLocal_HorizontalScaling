@@ -1,0 +1,104 @@
+/*
+Hệ thống CSS toàn cục cho WebLocal
+Tất cả các biến được định nghĩa trong variables.css và size-scale.css
+*/
+
+/* Kích thước tổng thể */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Container chung */
+.container {
+  width: 100%;
+  max-width: var(--space-10);
+  margin: 0 auto;
+  padding: var(--space-1) var(--space-2);
+}
+
+/* Typography - Các biến font-size đã được định nghĩa trong size-scale.css */
+
+/* Input chuẩn */
+.input-field {
+  padding: var(--space-125);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-sm);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  width: 100%;
+  height: var(--input-height);
+  box-sizing: border-box;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: var(--primary-500);
+  box-shadow: 0 0 0 2px rgba(165, 150, 109, 0.2);
+}
+
+/* Button chuẩn */
+.btn {
+  padding: var(--space-125) var(--space-2);
+  background: var(--primary-500);
+  color: var(--text-white);
+  border: none;
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  height: var(--btn-height);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  background: var(--primary-600);
+}
+
+.btn-secondary {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-medium);
+}
+
+.btn-secondary:hover {
+  background: var(--bg-primary);
+  border-color: var(--primary-500);
+}
+
+/* Card */
+.card {
+  background: var(--bg-card);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-3);
+  box-shadow: 0 4px 12px var(--shadow-light);
+}
+
+/* Utilities */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.d-flex { display: flex; }
+.justify-center { justify-content: center; }
+.align-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+
+.mt-1 { margin-top: var(--space-1); }
+.mt-2 { margin-top: var(--space-2); }
+.mb-1 { margin-bottom: var(--space-1); }
+.mb-2 { margin-bottom: var(--space-2); }
+.ml-1 { margin-left: var(--space-1); }
+.mr-1 { margin-right: var(--space-1); }
+.p-1 { padding: var(--space-1); }
+.p-2 { padding: var(--space-2); }
+
+.w-full { width: 100%; }
+.h-full { height: 100%; }

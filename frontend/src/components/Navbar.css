@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.3rem 1.25rem;
+  padding: var(--space-05) var(--space-25);
   background: linear-gradient(90deg, var(--primary-500) 0%, var(--secondary-500) 50%, var(--primary-500) 100%);
   background-size: 200% 200%;
   color: var(--text-white);
@@ -26,13 +26,17 @@
   background: transparent;
   color: var(--text-white);
   border: 1px solid var(--text-white);
-  padding: 0.25rem 0.75rem;
-  border-radius: 20px;
+  padding: var(--space-1) var(--space-15);
+  border-radius: var(--border-radius-lg);
   cursor: pointer;
   font-weight: 600;
   transition: all 0.3s ease;
   box-shadow: 0 2px 4px var(--shadow-light);
   animation: pulse 2s infinite;
+  height: var(--btn-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes pulse {
@@ -57,13 +61,13 @@
 
 .navbar-brand h2 {
   margin: 0;
-  font-size: 1rem;
+  font-size: var(--font-size-base);
 }
 
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    gap: 0.3rem;
-    padding: 0.3rem 1rem;
+    gap: var(--space-05);
+    padding: var(--space-05) var(--space-2);
   }
 }
