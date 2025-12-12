@@ -7,6 +7,18 @@
 - [🎨 Giao diện người dùng](UI.MD)
 - [📝 Nhật ký thay đổi](CHANGELOG.MD)
 
+## [2025-12-12 15:50] ✨
+### Thêm Mới
+- ✨ Thêm hiệu ứng chuyển động nền cho navbar: gradient chuyển động nhẹ nhàng
+- 📝 Cập nhật UI.MD mô tả chi tiết các thành phần giao diện
+
+### Chi Tiết
+- 🎨 Tạo hiệu ứng chuyển động gradient từ màu đất sang màu terracotta
+- ⏱️ Tốc độ chuyển đổi 8s, lặp vô hạn với hiệu ứng mượt mà
+- 🌍 Tăng tính trực quan và hấp dẫn cho giao diện
+
+[🔙 Về đầu trang](#-nhật-ký-thay-đổi)
+
 ## [2025-12-12 15:45] 🗑️
 ### Thay Đổi
 - 🚫 Xóa các mục điều hướng khỏi navbar: Trang Chủ, Bảng Điều Khiển, Trạng Thái, Cài Đặt

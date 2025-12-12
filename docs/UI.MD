@@ -32,7 +32,7 @@
 [🔙 Về mục lục](#-mục-lục)
 
 ## 🎨 Thiết Kế Giao Diện
-- **Màu sắc**: Hệ thống màu đất/thổ (earth/soil theme) theo biến CSS
+- **Màu sắc**: Hệ thống màu đất/thổ (earth/soil theme) theo biến CSS với hiệu ứng chuyển động nhẹ nhàng
 - **Layout**: Responsive với navbar trên cùng, chiều cao gọn nhẹ
 - **Components**: Reusable React components
 - **Icons**: Emoji + biểu tượng trực quan
@@ -47,7 +47,7 @@
 ├── 📄 Navbar.jsx
 │   ├── 🎨 Giao diện: Thanh ngang trên cùng, chiều cao gọn nhẹ
 │   ├── 🎯 Chức năng: Hiển thị logo thương hiệu
-│   ├── 🎨 Thiết kế: Gradient đất/thổ (theo biến CSS)
+│   ├── 🎨 Thiết kế: Gradient đất/thổ chuyển động nhẹ nhàng (theo biến CSS)
 │   ├── 📐 Kích thước: padding: 0.3rem 1.25rem, font-size: 1rem (tiêu đề)
 │   └── 🏷️ Logo: Sử dụng component Logo.jsx (thiết kế thương hiệu cá tính)
 ├── 📄 Logo.jsx
