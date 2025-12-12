@@ -32,7 +32,7 @@
 [🔙 Về mục lục](#-mục-lục)
 
 ## 🎨 Thiết Kế Giao Diện
-- **Màu sắc**: Gradient xanh - tím theo thiết kế hiện đại
+- **Màu sắc**: Nền trắng, chữ tối màu (#333) cho độ tương phản tốt
 - **Layout**: Responsive với navbar trên cùng
 - **Components**: Reusable React components
 - **Icons**: Emoji + biểu tượng trực quan
