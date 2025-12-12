@@ -48,11 +48,21 @@
 │   ├── 🎨 Giao diện: Thanh ngang trên cùng
 │   ├── 🎯 Chức năng: Điều hướng giữa các trang
 │   ├── 🔗 Liên kết: Trang Chủ, Bảng Điều Khiển, Trạng Thái, Cài Đặt
-│   └── 🎨 Thiết kế: Gradient màu xanh - tím
-└── 📄 Navbar.css
-    ├── 🎨 Định dạng: flex layout, gradient background
-    ├── 🎯 Hiển thị: responsive với mobile/desktop
-    └── 🌐 Tương tác: hover effects
+│   ├── 🎨 Thiết kế: Gradient màu xanh - tím
+│   └── 🏷️ Logo: Sử dụng component Logo.jsx
+├── 📄 Logo.jsx
+│   ├── 🎨 Giao diện: Vector SVG với hình tròn, đường kết nối và chữ WebLocal
+│   ├── 🎯 Ý nghĩa: Biểu tượng cho hệ thống cục bộ (WebLocal)
+│   ├── 🖼️ Thiết kế: Hình tròn lớn (hệ thống cục bộ), hình tròn nhỏ (máy chủ cục bộ), 
+│   │                đường kết nối (mạng nội bộ), hình chữ nhật (website)
+│   └── 🎨 Màu sắc: Trắng trên nền gradient
+├── 📄 Navbar.css
+│   ├── 🎨 Định dạng: flex layout, gradient background
+│   ├── 🎯 Hiển thị: responsive với mobile/desktop
+│   └── 🌐 Tương tác: hover effects
+└── 📄 Logo.css
+    ├── 🎨 Định dạng: flex layout, hiệu ứng hover
+    └── 📐 Kích thước: 100px x 40px
 ```
 
 ### Component Tree (Theo trang hiện tại)
