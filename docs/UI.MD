@@ -60,9 +60,7 @@
 📄 App.jsx
 └── 📄 HomePage.jsx
     └── 📄 Navbar.jsx
-        ├── 🎨 UI: Thanh điều hướng
-        ├── 🎯 Function: Chuyển trang
-        └── 🎨 Style: Gradient #667eea → #764ba2
+        └── 🎨 UI: Thanh điều hướng chính
 ```
 
 [🔙 Về mục lục](#-mục-lục)
