@@ -16,7 +16,21 @@ Hệ thống 5 lớp với khả năng mở rộng theo chiều ngang, quản l�
 - CSS Framework: CSS thuần
 
 ## 🧭 Điều Hướng
-- **Cấu trúc hệ thống**: `STRUCTURE.MD` 🗂️
-- **Hướng dẫn vận hành**: `RUN.MD` 🚀
-- **Giao diện người dùng**: `UI.MD` 🎨
-- **Nhật ký thay đổi**: `CHANGELOG.MD` 📝
+- **Cấu trúc hệ thống**: [STRUCTURE.MD](STRUCTURE.MD) 🗂️
+- **Hướng dẫn vận hành**: [RUN.MD](RUN.MD) 🚀
+- **Giao diện người dùng**: [UI.MD](UI.MD) 🎨
+- **Nhật ký thay đổi**: [CHANGELOG.MD](CHANGELOG.MD) 📝
+
+## 📚 Mục Lục
+- [🎯 Mục Tiêu](#-mục-tiêu)
+- [💻 Công Nghệ Sử Dụng](#-công-nghệ-sử-dụng)
+- [🧭 Điều Hướng](#-điều-hướng)
+
+## 🔄 Chuyển Tiếp Giữa Các Tài Liệu
+- [🏠 Trang chủ](README.MD)
+- [📋 Cấu trúc hệ thống](STRUCTURE.MD)
+- [🚀 Hướng dẫn vận hành](RUN.MD)
+- [🎨 Giao diện người dùng](UI.MD)
+- [📝 Nhật ký thay đổi](CHANGELOG.MD)
+
+[🔙 Về đầu trang](#-hệ-thống-máy-chủ-website)

@@ -1,5 +1,12 @@
 # 🏗️ Cấu Trúc Hệ Thống
 
+## 🔄 Chuyển Tiếp Giữa Các Tài Liệu
+- [🏠 Trang chủ](README.MD)
+- [📋 Cấu trúc hệ thống](STRUCTURE.MD)
+- [🚀 Hướng dẫn vận hành](RUN.MD)
+- [🎨 Giao diện người dùng](UI.MD)
+- [📝 Nhật ký thay đổi](CHANGELOG.MD)
+
 ## 🗂️ Tổng Quan Cấu Trúc
 
 ### 📁 Thư Mục Chính
@@ -56,3 +63,5 @@ App.jsx
 ## 💾 Versions & Backups
 - `V0.0.1-KhoiDauCuaDuAn`: Hệ thống cơ bản
 - `V0.0.2-DB-Gateway`: Có DB Gateway trung gian
+
+[🔙 Về đầu trang](#-cấu-trúc-hệ-thống)

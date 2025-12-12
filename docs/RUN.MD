@@ -1,5 +1,12 @@
 # 🚀 Hướng Dẫn Khởi Động Hệ Thống
 
+## 🔄 Chuyển Tiếp Giữa Các Tài Liệu
+- [🏠 Trang chủ](README.MD)
+- [📋 Cấu trúc hệ thống](STRUCTURE.MD)
+- [🚀 Hướng dẫn vận hành](RUN.MD)
+- [🎨 Giao diện người dùng](UI.MD)
+- [📝 Nhật ký thay đổi](CHANGELOG.MD)
+
 ## 🏗️ Cấu trúc hệ thống
 ```
 ├── load-balancer/          # Load Balancer service 🔄
@@ -27,6 +34,8 @@
     ├── CHANGELOG.MD       # Nhật ký thay đổi 📝
     └── RUN.MD             # Hướng dẫn khởi động (bạn đang đọc file này) 📖
 ```
+
+[🔙 Về đầu trang](#-hướng-dẫn-khởi-động-hệ-thống)
 
 ## 🛠️ Yêu cầu hệ thống
 - Node.js v18+ 💻
