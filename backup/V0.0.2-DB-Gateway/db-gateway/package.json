@@ -1,0 +1,16 @@
+{
+  "name": "db-gateway",
+  "version": "1.0.0",
+  "description": "Database gateway service for connecting web servers to multiple databases",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "http-proxy": "^1.18.1"
+  },
+  "keywords": ["db-gateway", "database", "proxy"],
+  "author": "System",
+  "license": "MIT"
+}
