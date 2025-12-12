@@ -41,20 +41,47 @@ Người Dùng 👤 → Frontend 🎨 → Load Balancer 🔄 → Web Servers �
 - Xử lý dữ liệu, tự đăng ký với gateway
 
 ## 📱 Frontend Components
-### Component Tree
+### Component Tree (Tổng Quan)
 ```
-App.jsx
-└── HomePage.jsx
-    ├── Navbar.jsx (Thanh điều hướng)
-    └── Content (Nội dung trang chủ)
-        ├── Tiêu đề: "🏠 Trang Chủ"
-        ├── Mô tả: "Chào mừng đến với hệ thống WebLocal!"
-        └── Empty Content (Nội dung trống - sẽ được phát triển thêm)
+📄 App.jsx
+└── 📄 HomePage.jsx
+    ├── 📄 Navbar.jsx (Thanh điều hướng)
+    └── 📄 Content.jsx (Nội dung trang chủ)
+        ├── 🏠 Tiêu đề: "🏠 Trang Chủ"
+        ├── 📝 Mô tả: "Chào mừng đến với hệ thống WebLocal!"
+        └── 📁 Empty Content (Nội dung trống - sẽ được phát triển thêm)
+```
+
+### Component Structure (Dạng Thư Mục)
+```
+📁 frontend/
+├── 📄 index.html
+├── 📄 vite.config.js
+├── 📄 package.json
+├── 📁 src/
+│   ├── 📄 main.jsx
+│   ├── 📄 App.jsx
+│   ├── 📄 App.css
+│   ├── 📁 components/
+│   │   ├── 📄 Navbar.jsx
+│   │   └── 📄 Navbar.css
+│   ├── 📁 pages/
+│   │   ├── 📄 HomePage.jsx
+│   │   └── 📄 HomePage.css
+│   ├── 📁 services/
+│   └── 📁 utils/
+└── 📁 node_modules/
 ```
 
 ### Component Details
-- **Navbar.jsx**: Thanh điều hướng với các liên kết (Trang Chủ, Bảng Điều Khiển, Trạng Thái, Cài Đặt)
-- **HomePage.jsx**: Trang chủ với layout bao gồm Navbar và nội dung chính giữa
+- **Navbar.jsx**:
+  - 📍 Vị trí: `frontend/src/components/`
+  - 🎯 Chức năng: Thanh điều hướng với các liên kết (Trang Chủ, Bảng Điều Khiển, Trạng Thái, Cài Đặt)
+  - 🎨 Giao diện: Gradient xanh - tím, responsive
+- **HomePage.jsx**:
+  - 📍 Vị trí: `frontend/src/pages/`
+  - 🎯 Chức năng: Trang chủ với layout bao gồm Navbar và nội dung chính giữa
+  - 🎨 Giao diện: Gradient background với card nội dung được căn giữa
 
 ### Page Structure
 - **Header**: Navbar với tiêu đề "📋 Hệ Thống"

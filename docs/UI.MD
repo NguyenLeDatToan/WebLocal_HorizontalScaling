@@ -40,9 +40,46 @@
 [🔙 Về mục lục](#-mục-lục)
 
 ## 📱 Components Hiện Có
-- **Navbar**: Thanh điều hướng với các liên kết (Trang Chủ, Bảng Điều Khiển, Trạng Thái, Cài Đặt)
+
+### Cấu Trúc Component (Dạng Cây)
+```
+📁 Components/
+├── 📄 Navbar.jsx
+│   ├── 🎨 Giao diện: Thanh ngang trên cùng
+│   ├── 🎯 Chức năng: Điều hướng giữa các trang
+│   ├── 🔗 Liên kết: Trang Chủ, Bảng Điều Khiển, Trạng Thái, Cài Đặt
+│   └── 🎨 Thiết kế: Gradient màu xanh - tím
+└── 📄 Navbar.css
+    ├── 🎨 Định dạng: flex layout, gradient background
+    ├── 🎯 Hiển thị: responsive với mobile/desktop
+    └── 🌐 Tương tác: hover effects
+```
+
+### Component Tree (Theo trang hiện tại)
+```
+📄 App.jsx
+└── 📄 HomePage.jsx
+    └── 📄 Navbar.jsx
+        ├── 🎨 UI: Thanh điều hướng
+        ├── 🎯 Function: Chuyển trang
+        └── 🎨 Style: Gradient #667eea → #764ba2
+```
 
 [🔙 Về mục lục](#-mục-lục)
+
+## 🔗 Mối Quan Hệ Component
+```
+📁 Pages/
+└── HomePage.jsx
+    └── sử dụng
+        └── 📁 Components/
+            └── Navbar.jsx
+                └── liên kết đến
+                    ├── Trang Chủ (/)
+                    ├── Bảng Điều Khiển (/dashboard)
+                    ├── Trạng Thái (/status)
+                    └── Cài Đặt (/settings)
+```
 
 ## 🔧 Công Nghệ Sử Dụng
 - React 18+

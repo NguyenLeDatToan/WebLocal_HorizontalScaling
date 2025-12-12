@@ -25,6 +25,18 @@ Hệ thống 5 lớp với khả năng mở rộng theo chiều ngang, quản l�
 - [🎯 Mục Tiêu](#-mục-tiêu)
 - [💻 Công Nghệ Sử Dụng](#-công-nghệ-sử-dụng)
 - [🧭 Điều Hướng](#-điều-hướng)
+- [📱 Cấu Trúc Component](#-cấu-trúc-component)
+
+## 📱 Cấu Trúc Component
+Các component được tổ chức theo mô hình thư mục rõ ràng:
+- 📁 `frontend/src/components/`: Chứa các component tái sử dụng
+- 📁 `frontend/src/pages/`: Chứa các trang chính của ứng dụng
+- 📁 `frontend/src/services/`: Chứa các service kết nối API
+- 📁 `frontend/src/utils/`: Chứa các tiện ích hỗ trợ
+
+Hiện tại, hệ thống đã tích hợp:
+- **Navbar.jsx**: Component điều hướng chính
+- **HomePage.jsx**: Trang chủ hiển thị với Navbar
 
 ## 💾 Phiên Bản & Sao Lưu
 - `V0.0.1-KhoiDauCuaDuAn`: Hệ thống cơ bản
