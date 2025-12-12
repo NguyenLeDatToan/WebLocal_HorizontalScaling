@@ -63,5 +63,6 @@ App.jsx
 ## 💾 Versions & Backups
 - `V0.0.1-KhoiDauCuaDuAn`: Hệ thống cơ bản
 - `V0.0.2-DB-Gateway`: Có DB Gateway trung gian
+- `V0.1.2-Docs-System`: Hệ thống hoàn chỉnh với tài liệu cải thiện
 
 [🔙 Về đầu trang](#-cấu-trúc-hệ-thống)

@@ -26,6 +26,11 @@ Hệ thống 5 lớp với khả năng mở rộng theo chiều ngang, quản l�
 - [💻 Công Nghệ Sử Dụng](#-công-nghệ-sử-dụng)
 - [🧭 Điều Hướng](#-điều-hướng)
 
+## 💾 Phiên Bản & Sao Lưu
+- `V0.0.1-KhoiDauCuaDuAn`: Hệ thống cơ bản
+- `V0.0.2-DB-Gateway`: Có DB Gateway trung gian
+- `V0.1.2-Docs-System`: Hệ thống hoàn chỉnh với tài liệu cải thiện
+
 ## 🔄 Chuyển Tiếp Giữa Các Tài Liệu
 - [🏠 Trang chủ](README.MD)
 - [📋 Cấu trúc hệ thống](STRUCTURE.MD)

@@ -7,6 +7,19 @@
 - [🎨 Giao diện người dùng](UI.MD)
 - [📝 Nhật ký thay đổi](CHANGELOG.MD)
 
+## [2025-12-07 17:09] 📁
+### Thêm Mới
+- ✅ Tạo bản sao lưu phiên bản: V0.1.2-Docs-System
+- ✅ Chứa toàn bộ hệ thống với cải thiện điều hướng tài liệu
+- ✅ Bao gồm: Load Balancer, Web Servers, DB Gateway, DB Services, Frontend, Docs
+
+### Chi Tiết
+- 📁 Thư mục backup/V0.1.2-Docs-System chứa toàn bộ hệ thống hiện tại
+- 📝 Bao gồm tất cả các tài liệu đã cập nhật với điều hướng cải thiện
+- 💾 Hệ thống đầy đủ: frontend, load-balancer, web-servers, db-gateway, db-services
+
+[🔙 Về đầu trang](#-nhật-ký-thay-đổi)
+
 ## [2024-12-12 13:30] 🔀
 ### Thêm Mới
 - ✅ Tạo DB Gateway service làm dịch vụ trung gian
