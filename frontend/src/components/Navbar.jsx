@@ -1,11 +1,12 @@
 import React from 'react';
+import Logo from './Logo';
 import './Navbar.css';
 
 function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <h2>📋 Hệ Thống</h2>
+        <Logo />
       </div>
       <ul className="navbar-menu">
         <li><a href="/">🏠 Trang Chủ</a></li>
