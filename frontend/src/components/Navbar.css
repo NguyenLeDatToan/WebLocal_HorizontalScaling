@@ -36,8 +36,8 @@
 
 .navbar-start-btn:hover {
   background: var(--complement-600);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px var(--shadow-medium);
+  box-shadow: 0 0 15px 5px rgba(89, 171, 98, 0.6);
+  transform: scale(1.05);
 }
 
 .navbar-brand h2 {

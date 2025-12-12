@@ -61,7 +61,7 @@
 ├── 📄 Navbar.css
 │   ├── 🎨 Định dạng: flex layout, gradient background chuyển động
 │   ├── 📌 Nút hành động: navbar-start-btn với styling riêng
-│   ├── 🌐 Tương tác: hover effects với hiệu ứng nâng nhẹ
+│   ├── 🌐 Tương tác: hover effects với hiệu ứng phát sáng (glow effect)
 │   └── 📱 Mobile: responsive với giao diện gọn gàng
 └── 📄 Logo.css
     ├── 🎨 Định dạng: responsive sizing

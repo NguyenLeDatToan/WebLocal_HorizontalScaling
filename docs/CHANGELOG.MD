@@ -7,6 +7,19 @@
 - [🎨 Giao diện người dùng](UI.MD)
 - [📝 Nhật ký thay đổi](CHANGELOG.MD)
 
+## [2025-12-12 16:00] ✨
+### Thay Đổi
+- ✨ Thay đổi hiệu ứng hover cho nút "Bắt đầu": từ hiệu ứng nâng nhẹ sang hiệu ứng phát sáng (glow effect)
+- 🌟 Tạo hiệu ứng glow với box-shadow phát sáng khi hover
+- 📝 Cập nhật UI.MD mô tả chi tiết các thành phần giao diện
+
+### Chi Tiết
+- 🎨 Thay thế hiệu ứng transform translateY(-2px) bằng hiệu ứng phát sáng
+- 💫 Thêm box-shadow phát sáng với màu sắc hài hòa với hệ thống màu đất/thổ
+- 📌 Giữ lại hiệu ứng scale nhẹ để tăng trải nghiệm người dùng
+
+[🔙 Về đầu trang](#-nhật-ký-thay-đổi)
+
 ## [2025-12-12 15:55] ✅
 ### Thêm Mới
 - ✅ Thêm nút "Bắt đầu" vào bên phải navbar
