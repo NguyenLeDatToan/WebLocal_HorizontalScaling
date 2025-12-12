@@ -8,6 +8,9 @@ function Navbar() {
       <div className="navbar-brand">
         <Logo />
       </div>
+      <button className="navbar-start-btn">
+        Bắt đầu
+      </button>
     </nav>
   );
 }

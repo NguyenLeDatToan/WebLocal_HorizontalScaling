@@ -46,10 +46,11 @@
 📁 Components/
 ├── 📄 Navbar.jsx
 │   ├── 🎨 Giao diện: Thanh ngang trên cùng, chiều cao gọn nhẹ
-│   ├── 🎯 Chức năng: Hiển thị logo thương hiệu
+│   ├── 🎯 Chức năng: Hiển thị logo thương hiệu và nút hành động chính
 │   ├── 🎨 Thiết kế: Gradient đất/thổ chuyển động nhẹ nhàng (theo biến CSS)
 │   ├── 📐 Kích thước: padding: 0.3rem 1.25rem, font-size: 1rem (tiêu đề)
-│   └── 🏷️ Logo: Sử dụng component Logo.jsx (thiết kế thương hiệu cá tính)
+│   ├── 🏷️ Logo: Sử dụng component Logo.jsx (thiết kế thương hiệu cá tính)
+│   └── 🎯 Nút hành động: Nút tròn "Bắt đầu" ở bên phải với hiệu ứng hover
 ├── 📄 Logo.jsx
 │   ├── 🖼️ Loại file: Hình ảnh PNG
 │   ├── 📁 Đường dẫn: ../utils/img/logo.png
@@ -58,11 +59,10 @@
 │   ├── 🌐 Màu sắc: Áp dụng filter CSS để đổi màu thành trắng
 │   └── 🖌️ Hiệu ứng: Zoom nhẹ khi hover (1.05x)
 ├── 📄 Navbar.css
-│   ├── 🎨 Định dạng: flex layout, gradient background (sử dụng biến CSS)
-│   ├── 📐 Kích thước: padding: 0.3rem 1.25rem (navbar), padding: 0.1rem 0.5rem (menu items)
-│   ├── 🎯 Hiển thị: responsive với mobile/desktop
-│   ├── 🌐 Tương tác: hover effects
-│   └── 📱 Mobile: padding: 0.3rem 1rem, gap: 0.3rem
+│   ├── 🎨 Định dạng: flex layout, gradient background chuyển động
+│   ├── 📌 Nút hành động: navbar-start-btn với styling riêng
+│   ├── 🌐 Tương tác: hover effects với hiệu ứng nâng nhẹ
+│   └── 📱 Mobile: responsive với giao diện gọn gàng
 └── 📄 Logo.css
     ├── 🎨 Định dạng: responsive sizing
     ├── 🎯 Hiển thị: ảnh logo với hiệu ứng hover

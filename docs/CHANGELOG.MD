@@ -7,6 +7,19 @@
 - [🎨 Giao diện người dùng](UI.MD)
 - [📝 Nhật ký thay đổi](CHANGELOG.MD)
 
+## [2025-12-12 15:55] ✅
+### Thêm Mới
+- ✅ Thêm nút "Bắt đầu" vào bên phải navbar
+- 🎨 Thiết kế nút với hiệu ứng hover và màu sắc hài hòa với hệ thống màu đất/thổ
+- 📝 Cập nhật UI.MD mô tả chi tiết các thành phần giao diện
+
+### Chi Tiết
+- 🎯 Nút hành động chính giúp người dùng dễ dàng bắt đầu sử dụng ứng dụng
+- 📌 Vị trí bên phải navbar để tạo sự cân bằng và nhấn mạnh hành động
+- 🖌️ Hiệu ứng hover với chuyển động nhẹ và đổ bóng cho trải nghiệm tốt hơn
+
+[🔙 Về đầu trang](#-nhật-ký-thay-đổi)
+
 ## [2025-12-12 15:50] ✨
 ### Thêm Mới
 - ✨ Thêm hiệu ứng chuyển động nền cho navbar: gradient chuyển động nhẹ nhàng

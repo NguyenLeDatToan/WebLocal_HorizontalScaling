@@ -22,6 +22,24 @@
   }
 }
 
+.navbar-start-btn {
+  background: var(--complement-500);
+  color: var(--text-white);
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px var(--shadow-light);
+}
+
+.navbar-start-btn:hover {
+  background: var(--complement-600);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px var(--shadow-medium);
+}
+
 .navbar-brand h2 {
   margin: 0;
   font-size: 1rem;
