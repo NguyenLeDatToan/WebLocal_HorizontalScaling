@@ -33,9 +33,11 @@ Các component được tổ chức theo mô hình thư mục rõ ràng:
 - 📁 `frontend/src/pages/`: Chứa các trang chính của ứng dụng
 - 📁 `frontend/src/services/`: Chứa các service kết nối API
 - 📁 `frontend/src/utils/`: Chứa các tiện ích hỗ trợ
+- 📁 `frontend/src/utils/img/`: Chứa hình ảnh logo.png
 
 Hiện tại, hệ thống đã tích hợp:
-- **Navbar.jsx**: Component điều hướng chính
+- **Logo.jsx**: Component hiển thị logo.png
+- **Navbar.jsx**: Component điều hướng chính (sử dụng Logo.jsx)
 - **HomePage.jsx**: Trang chủ hiển thị với Navbar
 
 ## 💾 Phiên Bản & Sao Lưu

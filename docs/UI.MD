@@ -49,20 +49,21 @@
 │   ├── 🎯 Chức năng: Điều hướng giữa các trang
 │   ├── 🔗 Liên kết: Trang Chủ, Bảng Điều Khiển, Trạng Thái, Cài Đặt
 │   ├── 🎨 Thiết kế: Gradient màu xanh - tím
-│   └── 🏷️ Logo: Sử dụng component Logo.jsx
+│   └── 🏷️ Logo: Sử dụng component Logo.jsx (thiết kế thương hiệu cá tính)
 ├── 📄 Logo.jsx
-│   ├── 🎨 Giao diện: Vector SVG với hình tròn, đường kết nối và chữ WebLocal
-│   ├── 🎯 Ý nghĩa: Biểu tượng cho hệ thống cục bộ (WebLocal)
-│   ├── 🖼️ Thiết kế: Hình tròn lớn (hệ thống cục bộ), hình tròn nhỏ (máy chủ cục bộ), 
-│   │                đường kết nối (mạng nội bộ), hình chữ nhật (website)
-│   └── 🎨 Màu sắc: Trắng trên nền gradient
+│   ├── 🖼️ Loại file: Hình ảnh PNG
+│   ├── 📁 Đường dẫn: ../utils/img/logo.png
+│   ├── 🎯 Mục tiêu: Hiển thị biểu tượng thương hiệu WebLocal
+│   ├── 📐 Kích thước: 40px chiều cao, tự động điều chỉnh theo tỷ lệ
+│   └── 🖌️ Hiệu ứng: Zoom nhẹ khi hover (1.05x)
 ├── 📄 Navbar.css
 │   ├── 🎨 Định dạng: flex layout, gradient background
 │   ├── 🎯 Hiển thị: responsive với mobile/desktop
 │   └── 🌐 Tương tác: hover effects
 └── 📄 Logo.css
-    ├── 🎨 Định dạng: flex layout, hiệu ứng hover
-    └── 📐 Kích thước: 100px x 40px
+    ├── 🎨 Định dạng: responsive sizing
+    ├── 🎯 Hiển thị: ảnh logo với hiệu ứng hover
+    └── 🌐 Tương tác: scale transformation
 ```
 
 ### Component Tree (Theo trang hiện tại)
@@ -70,7 +71,8 @@
 📄 App.jsx
 └── 📄 HomePage.jsx
     └── 📄 Navbar.jsx
-        └── 🎨 UI: Thanh điều hướng chính
+        └── 📄 Logo.jsx
+            └── 🎨 UI: Biểu tượng thương hiệu WebLocal với hiệu ứng động
 ```
 
 [🔙 Về mục lục](#-mục-lục)

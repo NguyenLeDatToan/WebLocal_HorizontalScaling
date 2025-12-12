@@ -75,6 +75,14 @@ Người Dùng 👤 → Frontend 🎨 → Load Balancer 🔄 → Web Servers �
   - 📍 Vị trí: `frontend/src/components/`
   - 🎯 Chức năng: Thanh điều hướng với các liên kết (Trang Chủ, Bảng Điều Khiển, Trạng Thái, Cài Đặt)
   - 🎨 Giao diện: Gradient xanh - tím, responsive
+  - 🧩 Bao gồm: Logo.jsx (hiển thị logo.png)
+- **Logo.jsx**:
+  - 📍 Vị trí: `frontend/src/components/`
+  - 🖼️ Loại file: Hình ảnh PNG
+  - 📁 Đường dẫn hình ảnh: `../utils/img/logo.png`
+  - 🎯 Chức năng: Hiển thị biểu tượng thương hiệu WebLocal
+  - 📐 Kích thước: 40px chiều cao, tự động điều chỉnh theo tỷ lệ
+  - 🖌️ Hiệu ứng: Zoom nhẹ khi hover (1.05x)
 - **HomePage.jsx**:
   - 📍 Vị trí: `frontend/src/pages/`
   - 🎯 Chức năng: Trang chủ với layout bao gồm Navbar và nội dung chính giữa
