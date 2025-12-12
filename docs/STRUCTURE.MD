@@ -46,11 +46,20 @@ Người Dùng 👤 → Frontend 🎨 → Load Balancer 🔄 → Web Servers �
 App.jsx
 └── HomePage.jsx
     ├── Navbar.jsx (Thanh điều hướng)
-    └── Empty Content (Nội dung trống)
+    └── Content (Nội dung trang chủ)
+        ├── Tiêu đề: "🏠 Trang Chủ"
+        ├── Mô tả: "Chào mừng đến với hệ thống WebLocal!"
+        └── Empty Content (Nội dung trống - sẽ được phát triển thêm)
 ```
 
 ### Component Details
 - **Navbar.jsx**: Thanh điều hướng với các liên kết (Trang Chủ, Bảng Điều Khiển, Trạng Thái, Cài Đặt)
+- **HomePage.jsx**: Trang chủ với layout bao gồm Navbar và nội dung chính giữa
+
+### Page Structure
+- **Header**: Navbar với tiêu đề "📋 Hệ Thống"
+- **Main Content**: Nội dung trang chủ với tiêu đề và mô tả chào mừng
+- **Layout**: Gradient background với card nội dung được căn giữa
 
 ### API Connections
 - `/api/*` → Load Balancer (20000)
