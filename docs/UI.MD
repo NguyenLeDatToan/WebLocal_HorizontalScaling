@@ -50,7 +50,7 @@
 │   ├── 🎨 Thiết kế: Gradient đất/thổ chuyển động nhẹ nhàng (theo biến CSS)
 │   ├── 📐 Kích thước: padding: 0.3rem 1.25rem, font-size: 1rem (tiêu đề)
 │   ├── 🏷️ Logo: Sử dụng component Logo.jsx (thiết kế thương hiệu cá tính)
-│   └── 🎯 Nút hành động: Nút tròn "Bắt đầu" ở bên phải với hiệu ứng hover
+│   └── 🎯 Nút hành động: Nút "Bắt đầu" ở bên phải với hiệu ứng pulse và hover
 ├── 📄 Logo.jsx
 │   ├── 🖼️ Loại file: Hình ảnh PNG
 │   ├── 📁 Đường dẫn: ../utils/img/logo.png
@@ -61,6 +61,7 @@
 ├── 📄 Navbar.css
 │   ├── 🎨 Định dạng: flex layout, gradient background chuyển động
 │   ├── 📌 Nút hành động: navbar-start-btn với styling riêng
+│   ├── ✨ Hiệu ứng: animation pulse 2s lặp vô hạn để thu hút sự chú ý
 │   ├── 🌐 Tương tác: hover effects với hiệu ứng phát sáng (glow effect)
 │   └── 📱 Mobile: responsive với giao diện gọn gàng
 └── 📄 Logo.css
