@@ -23,7 +23,7 @@
 [🔙 Về mục lục](#-mục-lục)
 
 ## 🧭 Flow Người Dùng
-1. **Navbar** → Điều hướng giữa các trang
+1. **Navbar** → Hiển thị logo thương hiệu
 2. **Trang chủ** → Xem trạng thái tổng quát
 3. **Bảng điều khiển** → Quản lý chi tiết (tính năng đang phát triển)
 4. **Trạng thái** → Xem chi tiết trạng thái (tính năng đang phát triển)
@@ -32,8 +32,8 @@
 [🔙 Về mục lục](#-mục-lục)
 
 ## 🎨 Thiết Kế Giao Diện
-- **Màu sắc**: Nền trắng, chữ tối màu (#333) cho độ tương phản tốt
-- **Layout**: Responsive với navbar trên cùng
+- **Màu sắc**: Hệ thống màu đất/thổ (earth/soil theme) theo biến CSS
+- **Layout**: Responsive với navbar trên cùng, chiều cao gọn nhẹ
 - **Components**: Reusable React components
 - **Icons**: Emoji + biểu tượng trực quan
 
@@ -45,21 +45,24 @@
 ```
 📁 Components/
 ├── 📄 Navbar.jsx
-│   ├── 🎨 Giao diện: Thanh ngang trên cùng
-│   ├── 🎯 Chức năng: Điều hướng giữa các trang
-│   ├── 🔗 Liên kết: Trang Chủ, Bảng Điều Khiển, Trạng Thái, Cài Đặt
-│   ├── 🎨 Thiết kế: Gradient màu xanh - tím
+│   ├── 🎨 Giao diện: Thanh ngang trên cùng, chiều cao gọn nhẹ
+│   ├── 🎯 Chức năng: Hiển thị logo thương hiệu
+│   ├── 🎨 Thiết kế: Gradient đất/thổ (theo biến CSS)
+│   ├── 📐 Kích thước: padding: 0.3rem 1.25rem, font-size: 1rem (tiêu đề)
 │   └── 🏷️ Logo: Sử dụng component Logo.jsx (thiết kế thương hiệu cá tính)
 ├── 📄 Logo.jsx
 │   ├── 🖼️ Loại file: Hình ảnh PNG
 │   ├── 📁 Đường dẫn: ../utils/img/logo.png
 │   ├── 🎯 Mục tiêu: Hiển thị biểu tượng thương hiệu WebLocal
-│   ├── 📐 Kích thước: 40px chiều cao, tự động điều chỉnh theo tỷ lệ
+│   ├── 📐 Kích thước: 50px chiều cao, tự động điều chỉnh theo tỷ lệ
+│   ├── 🌐 Màu sắc: Áp dụng filter CSS để đổi màu thành trắng
 │   └── 🖌️ Hiệu ứng: Zoom nhẹ khi hover (1.05x)
 ├── 📄 Navbar.css
-│   ├── 🎨 Định dạng: flex layout, gradient background
+│   ├── 🎨 Định dạng: flex layout, gradient background (sử dụng biến CSS)
+│   ├── 📐 Kích thước: padding: 0.3rem 1.25rem (navbar), padding: 0.1rem 0.5rem (menu items)
 │   ├── 🎯 Hiển thị: responsive với mobile/desktop
-│   └── 🌐 Tương tác: hover effects
+│   ├── 🌐 Tương tác: hover effects
+│   └── 📱 Mobile: padding: 0.3rem 1rem, gap: 0.3rem
 └── 📄 Logo.css
     ├── 🎨 Định dạng: responsive sizing
     ├── 🎯 Hiển thị: ảnh logo với hiệu ứng hover
@@ -84,11 +87,8 @@
     └── sử dụng
         └── 📁 Components/
             └── Navbar.jsx
-                └── liên kết đến
-                    ├── Trang Chủ (/)
-                    ├── Bảng Điều Khiển (/dashboard)
-                    ├── Trạng Thái (/status)
-                    └── Cài Đặt (/settings)
+                └── hiển thị
+                    └── Logo (/)
 ```
 
 ## 🔧 Công Nghệ Sử Dụng

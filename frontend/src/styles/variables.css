@@ -1,0 +1,57 @@
+/* Hệ thống biến màu (Color Variables) cho WebLocal */
+:root {
+  /* Màu chính (Primary Colors) */
+  --primary-100: #e6eeff;  /* Nhạt nhất */
+  --primary-200: #ccdfff;  
+  --primary-300: #99bbff;
+  --primary-400: #6699ff;
+  --primary-500: #667eea;  /* Màu chính từ gradient hiện tại */
+  --primary-600: #4d6bc8;
+  --primary-700: #334da5;
+  --primary-800: #1a2f82;
+  --primary-900: #0d1a66;  /* Tối nhất */
+
+  /* Màu phụ (Secondary Colors) */
+  --secondary-100: #f0eef8;
+  --secondary-200: #dfd8f0;
+  --secondary-300: #c0b2e0;
+  --secondary-400: #a08bd0;
+  --secondary-500: #764ba2;  /* Màu thứ hai từ gradient hiện tại */
+  --secondary-600: #5d3a80;
+  --secondary-700: #4a2e66;
+  --secondary-800: #37224d;
+  --secondary-900: #29193a;
+
+  /* Màu nền (Background Colors) */
+  --bg-primary: #ffffff;         /* Nền chính */
+  --bg-secondary: #f8f9fa;       /* Nền phụ */
+  --bg-card: #ffffff;            /* Nền card */
+  --bg-modal: rgba(0, 0, 0, 0.5); /* Nền mờ cho modal */
+
+  /* Màu văn bản (Text Colors) */
+  --text-primary: #333333;      /* Văn bản chính */
+  --text-secondary: #666666;    /* Văn bản phụ */
+  --text-light: #999999;        /* Văn bản nhạt */
+  --text-white: #ffffff;        /* Văn bản trắng */
+  --text-dark: #111111;         /* Văn bản tối */
+
+  /* Màu viền (Border Colors) */
+  --border-light: #e0e0e0;      /* Viền sáng */
+  --border-medium: #cccccc;     /* Viền vừa */
+  --border-dark: #999999;       /* Viền tối */
+
+  /* Màu trạng thái (Status Colors) */
+  --success: #4caf50;           /* Thành công */
+  --warning: #ff9800;           /* Cảnh báo */
+  --error: #f44336;            /* Lỗi */
+  --info: #2196f3;             /* Thông tin */
+
+  /* Màu bóng (Shadow Colors) */
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --shadow-medium: rgba(0, 0, 0, 0.2);
+  --shadow-heavy: rgba(0, 0, 0, 0.3);
+
+  /* Gradient */
+  --gradient-primary: linear-gradient(135deg, var(--primary-500) 0%, var(--secondary-500) 100%);
+  --gradient-secondary: linear-gradient(135deg, var(--secondary-500) 0%, var(--primary-500) 100%);
+}

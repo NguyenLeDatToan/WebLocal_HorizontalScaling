@@ -7,6 +7,83 @@
 - [🎨 Giao diện người dùng](UI.MD)
 - [📝 Nhật ký thay đổi](CHANGELOG.MD)
 
+## [2025-12-12 15:45] 🗑️
+### Thay Đổi
+- 🚫 Xóa các mục điều hướng khỏi navbar: Trang Chủ, Bảng Điều Khiển, Trạng Thái, Cài Đặt
+- 📝 Cập nhật UI.MD mô tả chi tiết các thành phần giao diện
+
+### Chi Tiết
+- 🎯 Navbar giờ đây chỉ hiển thị logo thương hiệu
+- 📏 Giao diện đơn giản, gọn gàng hơn
+
+[🔙 Về đầu trang](#-nhật-ký-thay-đổi)
+
+## [2025-12-12 15:41] 🖼️
+### Thay Đổi
+- 🔥 Giảm chiều cao logo từ 80px xuống 50px
+- 📝 Cập nhật UI.MD mô tả chi tiết các thành phần giao diện
+
+### Chi Tiết
+- 🎯 Logo gọn gàng hơn, phù hợp với thanh điều hướng hiện tại
+- 📏 Điều chỉnh để cân đối với các thành phần khác trong navbar
+
+[🔙 Về đầu trang](#-nhật-ký-thay-đổi)
+
+## [2025-12-12 15:35] 🔙
+### Hoàn tác
+- 🚫 Hoàn tác giảm chiều cao navbar: padding từ `0.15rem 1.25rem` quay lại `0.3rem 1.25rem`
+- 🚫 Hoàn tác padding menu items từ `0.05rem 0.4rem` quay lại `0.1rem 0.5rem`
+- 🚫 Hoàn tác cập nhật giao diện mobile: padding từ `0.15rem 1rem` quay lại `0.3rem 1rem`, gap từ `0.15rem` quay lại `0.3rem`
+
+### Chi Tiết
+- 🎯 Quay lại trạng thái navbar như trước khi giảm 40px chiều cao
+- 📋 Đảm bảo tính ổn định và khả năng sử dụng
+
+[🔙 Về đầu trang](#-nhật-ký-thay-đổi)
+
+## [2025-12-12 15:31] 🎨
+### Thay Đổi
+- 🔥 Giảm chiều cao navbar lần thứ tư: padding từ `0.3rem 1.25rem` xuống `0.15rem 1.25rem`
+- 🔥 Padding menu items từ `0.1rem 0.5rem` xuống `0.05rem 0.4rem`
+- 🔥 Cập nhật giao diện mobile: padding từ `0.3rem 1rem` xuống `0.15rem 1rem`, gap từ `0.3rem` xuống `0.15rem`
+- 📝 Cập nhật UI.MD mô tả chi tiết các thành phần giao diện
+
+### Chi Tiết
+- 🎯 Navbar gọn gàng tối đa, tiết kiệm thêm 40px không gian màn hình
+- 📏 Tối ưu hóa không gian dọc đến mức tối thiểu mà vẫn đảm bảo khả năng sử dụng
+
+[🔙 Về đầu trang](#-nhật-ký-thay-đổi)
+
+## [2025-12-12 15:21] 🎨
+### Thay Đổi
+- 🔥 Giảm chiều cao navbar lần thứ ba: padding từ `0.5rem 1.25rem` xuống `0.3rem 1.25rem`
+- 🔥 Kích thước font tiêu đề navbar từ `1.1rem` xuống `1rem`
+- 🔥 Padding menu items từ `0.15rem 0.6rem` xuống `0.1rem 0.5rem`
+- 🔥 Cập nhật giao diện mobile: padding từ `0.5rem 1rem` xuống `0.3rem 1rem`, gap từ `0.5rem` xuống `0.3rem`
+- 📝 Cập nhật UI.MD mô tả chi tiết các thành phần giao diện
+
+### Chi Tiết
+- 🎯 Navbar gọn gàng hơn nữa, tiết kiệm thêm không gian màn hình
+- 📏 Cân chỉnh tỉ mỉ các thành phần để tối ưu không gian dọc
+
+[🔙 Về đầu trang](#-nhật-ký-thay-đổi)
+
+## [2025-12-12 15:09] 🎨
+### Thay Đổi
+- 🔥 Giảm chiều cao navbar lần thứ hai: padding từ `0.75rem 1.5rem` xuống `0.5rem 1.25rem`
+- 🔥 Kích thước font tiêu đề navbar từ `1.25rem` xuống `1.1rem`
+- 🔥 Padding menu items từ `0.25rem 0.75rem` xuống `0.15rem 0.6rem`
+- 🔥 Cập nhật giao diện mobile: padding từ `0.75rem 1rem` xuống `0.5rem 1rem`, gap từ `0.75rem` xuống `0.5rem`
+- 📝 Cập nhật UI.MD mô tả chi tiết các thành phần giao diện
+- 📦 Tạo backup phiên bản: V0.1.3-PatternColor
+
+### Chi Tiết
+- 🎯 Navbar gọn gàng hơn, tiết kiệm không gian màn hình
+- 🎨 Cập nhật tài liệu mô tả đầy đủ các thành phần giao diện
+- 📁 Backup chứa toàn bộ hệ thống màu sắc đất/thổ (earth/soil theme)
+
+[🔙 Về đầu trang](#-nhật-ký-thay-đổi)
+
 ## [2025-12-07 17:09] 📁
 ### Thêm Mới
 - ✅ Tạo bản sao lưu phiên bản: V0.1.2-Docs-System

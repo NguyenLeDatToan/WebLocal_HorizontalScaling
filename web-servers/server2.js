@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 
 // Lấy cổng và host từ biến môi trường
-const PORT = parseInt(process.env.PORT) || 21000;
+const PORT = parseInt(process.env.PORT) || 21001;
 const HOST = process.env.HOST || 'localhost';
 const SERVER_ID = process.env.SERVER_ID || `server-${PORT}`;
 const LB_HOST = process.env.LB_HOST || 'localhost';
@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
 
 // Route kiểm tra sức khỏe
 app.get('/health', (req, res) => {
-  res.status(200).json({
+  res.status(200).json({ 
     status: 'healthy',
     serverId: SERVER_ID,
     port: PORT
@@ -159,7 +159,7 @@ async function checkDBGatewayConnection() {
 // Khởi động server
 app.listen(PORT, async () => {
   console.log(`Web Server ${SERVER_ID} running on port ${PORT}`);
-
+  
   // Kiểm tra kết nối đến DB Gateway trước khi đăng ký
   const dbGatewayConnected = await checkDBGatewayConnection();
   if (!dbGatewayConnected) {
@@ -167,7 +167,7 @@ app.listen(PORT, async () => {
   } else {
     console.log(`Successfully connected to DB Gateway at ${DB_GATEWAY_HOST}:${DB_GATEWAY_PORT}`);
   }
-
+  
   // Đăng ký với Load Balancer (sẽ thử lại nếu không thành công)
   await registerWithLoadBalancer();
 });

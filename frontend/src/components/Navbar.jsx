@@ -8,12 +8,6 @@ function Navbar() {
       <div className="navbar-brand">
         <Logo />
       </div>
-      <ul className="navbar-menu">
-        <li><a href="/">🏠 Trang Chủ</a></li>
-        <li><a href="/dashboard">📊 Bảng Điều Khiển</a></li>
-        <li><a href="/status">🔄 Trạng Thái</a></li>
-        <li><a href="/settings">⚙️ Cài Đặt</a></li>
-      </ul>
     </nav>
   );
 }
